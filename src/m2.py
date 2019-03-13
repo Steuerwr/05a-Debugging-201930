@@ -265,7 +265,7 @@ def broken_6(n):
     """
     total = 0
     for k in range(n):
-        total.x = total.x + (1 / (k + 1))
+        total = total + (1 / (k + 1))
 
     return total
 
