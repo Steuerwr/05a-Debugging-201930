@@ -12,7 +12,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 ###############################################################################
 #
-# TODO: 2. READ these instructions, ASKING QUESTIONS as needed.
+# Done: 2. READ these instructions, ASKING QUESTIONS as needed.
 #
 #   This module contains "broken" functions, as in m1 and m2.
 #   FOLLOW THE SAME STEPS as in the instructions of m1.py
@@ -122,9 +122,12 @@ def broken_1(m):
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
     count = 0
-    for k in range(2 * m + 2 - m):
-        if is_prime(m):
+    for k in range(m, 2*m+1):
+        if is_prime(k) :
             count = count + 1
+        else:
+            count = count + 0
+    return count
 
 
 # -----------------------------------------------------------------------------
